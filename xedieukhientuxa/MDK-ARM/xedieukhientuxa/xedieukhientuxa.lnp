@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"xedieukhientuxa\startup_stm32f103xb.o"
+"xedieukhientuxa\main.o"
+"xedieukhientuxa\stm32f1xx_it.o"
+"xedieukhientuxa\stm32f1xx_hal_msp.o"
+"xedieukhientuxa\stm32f1xx_hal_gpio_ex.o"
+"xedieukhientuxa\stm32f1xx_hal_tim.o"
+"xedieukhientuxa\stm32f1xx_hal_tim_ex.o"
+"xedieukhientuxa\stm32f1xx_hal.o"
+"xedieukhientuxa\stm32f1xx_hal_rcc.o"
+"xedieukhientuxa\stm32f1xx_hal_rcc_ex.o"
+"xedieukhientuxa\stm32f1xx_hal_gpio.o"
+"xedieukhientuxa\stm32f1xx_hal_dma.o"
+"xedieukhientuxa\stm32f1xx_hal_cortex.o"
+"xedieukhientuxa\stm32f1xx_hal_pwr.o"
+"xedieukhientuxa\stm32f1xx_hal_flash.o"
+"xedieukhientuxa\stm32f1xx_hal_flash_ex.o"
+"xedieukhientuxa\stm32f1xx_hal_exti.o"
+"xedieukhientuxa\stm32f1xx_hal_uart.o"
+"xedieukhientuxa\system_stm32f1xx.o"
+"xedieukhientuxa\car.o"
+"xedieukhientuxa\motor.o"
+"xedieukhientuxa\pwm.o"
+--strict --scatter "xedieukhientuxa\xedieukhientuxa.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "xedieukhientuxa.map" -o xedieukhientuxa\xedieukhientuxa.axf
